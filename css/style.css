@@ -70,13 +70,13 @@ address {
 
 /* ===== NAVIGATION ===== */
 nav {
-    background-color: var(--black);
+    background-color: var(--white);
     padding: var(--space-sm) 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 nav .container {
@@ -108,7 +108,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: var(--white);
+    color: var(--black);
     font-weight: 500;
     padding: 0.6rem 1rem;
     transition: all 0.3s ease;
@@ -123,15 +123,18 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
     background-color: var(--primary-green);
+    color: var(--white);
 }
 
 .nav-phone {
     background-color: var(--primary-green) !important;
+    color: var(--white) !important;
     font-weight: 600 !important;
 }
 
 .nav-phone:hover {
     background-color: var(--dark-green) !important;
+    color: var(--white) !important;
 }
 
 /* Mobile Menu Button */
@@ -139,7 +142,7 @@ nav ul li a.active {
     display: none;
     background: none;
     border: none;
-    color: var(--white);
+    color: var(--black);
     font-size: 1.8rem;
     cursor: pointer;
     padding: var(--space-xs);
@@ -154,7 +157,7 @@ nav ul li a.active {
     display: block;
     width: 24px;
     height: 3px;
-    background: var(--white);
+    background: var(--black);
     position: relative;
     transition: background 0.3s;
 }
@@ -165,7 +168,7 @@ nav ul li a.active {
     position: absolute;
     width: 24px;
     height: 3px;
-    background: var(--white);
+    background: var(--black);
     transition: transform 0.3s;
 }
 
@@ -1003,7 +1006,7 @@ footer {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(26, 26, 26, 0.98);
+        background-color: var(--white);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1021,6 +1024,18 @@ footer {
         padding: var(--space-sm) var(--space-lg);
         width: 100%;
         justify-content: center;
+        color: var(--black);
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background-color: var(--primary-green);
+        color: var(--white);
+    }
+
+    nav ul li a.nav-phone {
+        background-color: var(--primary-green);
+        color: var(--white) !important;
     }
 
     .logo img {
