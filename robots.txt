@@ -1,0 +1,11 @@
+# Robots.txt for Atmosphäre Garten- & Landschaftsbau
+# https://atmosphaere-galabau.de
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://atmosphaere-galabau.de/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
